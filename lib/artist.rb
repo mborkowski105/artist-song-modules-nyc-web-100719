@@ -1,4 +1,5 @@
 require 'pry'
+require 'Memorable'
 
 class Artist
   extend Memorable
