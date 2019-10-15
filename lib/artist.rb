@@ -17,6 +17,11 @@ class Artist
   def self.all
     @@artists
   end
+  
+  def self.find_by_name(name)
+    to_param.detect {|a| a.name == name}
+    end
+  end
 
   def add_song(song)
     @songs << song
